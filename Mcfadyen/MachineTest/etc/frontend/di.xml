@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Theme\Block\Html\Header">
+        <plugin name="modify_customer_header_message_after" type="Mcfadyen\MachineTest\Plugin\CustomWelcomemessage"/>
+    </type>
+
+</config>

@@ -1,0 +1,12 @@
+<div class="field user_type">
+   <label class="label" for="user_type"><span><?php /* @escapeNotVerified */ echo __('User Type') ?></span></label>
+    <div class="control">
+        <select id="user_type" name="user_type" title="<?= $block->escapeHtmlAttr(__('User Type')) ?>" class="select"
+                data-validate="{required:true}">
+            <!-- get the available user types -->
+            <?php foreach ($block->getUserType() as $type): ?>
+                <option value="<?= $type['value'] ?>"><?= $block->escapeHtml(__($type['label'])) ?></option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+</div>
